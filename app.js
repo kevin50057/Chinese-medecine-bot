@@ -1,6 +1,10 @@
 // 引用linebot SDK
 var linebot = require("linebot");
 
+const IMGUR_CLENT_ID = "5137f102a1ef894";
+
+const IMGUR_CLIENT_SECRET = "0d9b8681d07d18e856c588108f9541c83c85c788";
+
 // 用於辨識Line Channel的資訊
 var bot = linebot({
   channelId: "1660775529",
@@ -28,7 +32,7 @@ bot.on("message", function (event) {
     });
 
   if (event.message.type === "image") {
-    imgur.serClientId(process.env.IMGUR_CLENT_ID);
+    imgur.setClientId(IMGUR_CLENT_ID);
     event.message.content().then(function (content) {
       imgur
         .uploadBase64(content.toString("base64"))
