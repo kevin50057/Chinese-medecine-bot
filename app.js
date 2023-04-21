@@ -1,6 +1,8 @@
 // 引用linebot SDK
 var linebot = require("linebot");
 
+const imgur = require("imgur");
+
 const IMGUR_CLENT_ID = "5137f102a1ef894";
 
 const IMGUR_CLIENT_SECRET = "0d9b8681d07d18e856c588108f9541c83c85c788";

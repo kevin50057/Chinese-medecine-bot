@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "imgur": "^2.2.0",
     "linebot": "^1.6.1"
   }
 }
