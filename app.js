@@ -26,6 +26,22 @@ bot.on("message", function (event) {
       console.log("fk");
       // 當訊息回傳失敗後的處理
     });
+
+  if (event.message.type === "image") {
+    imgur.serClientId(process.env.IMGUR_CLENT_ID);
+    event.message.content().then(function (content) {
+      imgur
+        .uploadBase64(content.toString("base64"))
+        .then((json) => {
+          console.log(json.link);
+          event.reply(`cc is a pig`);
+        })
+        .catch((error) => {
+          console.error("CC在吃屎中");
+          event.reply("CC在吃屎中");
+        });
+    });
+  }
 });
 
 // Bot所監聽的webhook路徑與port
