@@ -4,7 +4,7 @@ services:
     env: node
     repo: https://github.com/kevin50057/Chinese-medecine-bot.git
     buildCommand: npm install
-    startCommand: node .
+    startCommand: node app.js
     plan: free
     autoDeploy: false
     envVars:
