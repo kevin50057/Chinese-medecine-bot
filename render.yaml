@@ -1,10 +1,10 @@
 services:
   - type: web
-    name: line-bot-nodejs-echo
+    name: Chinese medecine bot
     env: node
     repo: https://github.com/kevin50057/Chinese-medecine-bot.git
-    buildCommand: cd examples/echo-bot;npm install
-    startCommand: cd examples/echo-bot;node .
+    buildCommand: npm install
+    startCommand: node .
     plan: free
     autoDeploy: false
     envVars:
