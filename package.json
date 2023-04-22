@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "imgur": "^2.2.0",
-    "linebot": "^1.6.1"
+    "linebot": "^1.6.1",
+    "tslib": "^2.5.0"
   }
 }
